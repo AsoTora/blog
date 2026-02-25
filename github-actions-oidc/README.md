@@ -5,9 +5,13 @@ This folder contains practical, copy-paste-ready files for:
 - Terraform setup for GCP Workload Identity Federation (WIF)
 - GitHub Actions deploy workflow using OIDC (no long-lived JSON keys)
 
+## Important caveat
+
+this folder doesnt provide complete GCP infrastucture configuration required for a complete example, it only prodides examples for OIDC setup. GKE, networking and etc should be provisioned additionaly.
+
 ## Folder layout
 
-- `.github/workflows/deploy-gke.yaml`
+- `.github/workflows/deploy.yaml`
 - `infra/terraform/main.tf`
 - `infra/terraform/variables.tf`
 - `infra/terraform/outputs.tf`
@@ -29,3 +33,4 @@ This folder contains practical, copy-paste-ready files for:
 - `GKE_CLUSTER_NAME`
 - `GKE_CLUSTER_LOCATION`
 - `AR_REPOSITORY`
+
